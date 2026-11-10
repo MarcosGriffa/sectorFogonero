@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="es-AR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Sector. · Tu lugar afuera — Fogoneros y espacios exteriores a medida</title>
+<meta name="description" content="Sector. Diseñamos y construimos sectores fogoneros a medida para disfrutar el jardín todo el año. Buenos Aires, Argentina." />
+<meta name="theme-color" content="#f4f2ec" />
+<meta property="og:title" content="Sector. · Tu lugar afuera" />
+<meta property="og:description" content="Fogoneros y espacios exteriores a medida. Diseño minimalista, materiales nobles." />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="images/portada.jpg" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '2482436595608589');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2482436595608589&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+  :root{
+    --bg:#f4f2ec; --bg-2:#eeebe2; --ink:#17150f; --ink-2:#565148; --ink-3:#8d877b;
+    --line:rgba(23,21,15,.13); --olive:#7c7e4c; --olive-d:#666a3e; --olive-l:#a9b06a; --corten:#a9532b;
+    --max:1180px; --pad:clamp(20px,5vw,60px); --r:4px;
+    --sans:'Space Grotesk',system-ui,sans-serif; --body:'Inter',system-ui,sans-serif; --mono:'Space Mono',ui-monospace,monospace;
+  }
+  *{ box-sizing:border-box; margin:0; padding:0; }
+  html{ scroll-behavior:smooth; -webkit-text-size-adjust:100%; }
+  body{ font-family:var(--body); background:var(--bg); color:var(--ink); line-height:1.65; overflow-x:hidden; -webkit-font-smoothing:antialiased; }
+  a{ color:inherit; text-decoration:none; }
+  img{ display:block; max-width:100%; }
+  section{ scroll-margin-top:72px; }
+  .wrap{ max-width:var(--max); margin:0 auto; padding-inline:var(--pad); }
+  h1,h2,h3{ font-family:var(--sans); font-weight:500; line-height:1.06; letter-spacing:-.02em; }
+  .eyebrow{ font-family:var(--mono); font-size:.7rem; letter-spacing:.28em; text-transform:uppercase; color:var(--ink-3); display:inline-block; }
+  .wordmark{ font-family:var(--sans); font-weight:700; letter-spacing:-.03em; }
+  .wordmark .dot{ color:var(--olive); }
+  .ico{ width:1.05em; height:1.05em; flex:none; }
+
+  .pill{ display:inline-flex; align-items:center; gap:.7em; font-family:var(--mono); font-size:.8rem; letter-spacing:.02em; padding:1.05em 1.7em; border-radius:100px; cursor:pointer; background:var(--olive); color:#fff; border:1px solid transparent; transition:.3s ease; }
+  .pill:hover{ transform:translateY(-2px); box-shadow:0 16px 34px -16px rgba(23,17,10,.6); background:var(--olive-d); }
+  .ghost{ display:inline-flex; align-items:center; gap:.6em; font-family:var(--mono); font-size:.8rem; letter-spacing:.02em; padding:1.05em 1.6em; border-radius:100px; border:1px solid var(--line); color:var(--ink); transition:.3s ease; }
+  .ghost:hover{ border-color:var(--ink); }
+  .ghost.on-dark{ border-color:rgba(255,255,255,.35); color:#fff; }
+  .ghost.on-dark:hover{ border-color:#fff; background:rgba(255,255,255,.1); }
+  .ghost .dot,.pill .dot{ color:var(--olive-l); font-weight:700; }
+
+  header{ position:fixed; inset:0 0 auto 0; z-index:100; transition:.4s ease; border-bottom:1px solid transparent; }
+  header.scrolled{ background:rgba(244,242,236,.85); backdrop-filter:blur(14px); border-bottom-color:var(--line); }
+  .nav{ display:flex; align-items:center; justify-content:space-between; height:72px; }
+  .nav .wordmark{ font-size:1.35rem; color:#fff; transition:color .4s; }
+  header.scrolled .nav .wordmark{ color:var(--ink); }
+  .nav-links{ display:flex; align-items:center; gap:2.1rem; }
+  .nav-links a:not(.pill){ font-family:var(--mono); font-size:.76rem; letter-spacing:.08em; text-transform:uppercase; color:rgba(255,255,255,.85); transition:color .25s; }
+  header.scrolled .nav-links a:not(.pill){ color:var(--ink-2); }
+  .nav-links a:not(.pill):hover{ color:#fff; }
+  header.scrolled .nav-links a:not(.pill):hover{ color:var(--ink); }
+  .nav .pill{ padding:.7em 1.3em; }
+  .burger{ display:none; flex-direction:column; gap:5px; background:none; border:0; cursor:pointer; padding:8px; }
+  .burger span{ width:24px; height:2px; background:#fff; transition:.3s; }
+  header.scrolled .burger span{ background:var(--ink); }
+  body.menu-open .burger span{ background:var(--ink); }
+  body.menu-open .burger span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+  body.menu-open .burger span:nth-child(2){ opacity:0; }
+  body.menu-open .burger span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+
+  .hero{ position:relative; min-height:100svh; display:flex; align-items:flex-end; overflow:hidden; }
+  .hero-photo{ position:absolute; inset:0; z-index:0; background:#16110c center/cover no-repeat; background-image:url("images/portada.jpg"); }
+  .hero-photo::after{ content:""; position:absolute; inset:0; background:linear-gradient(to top,rgba(18,14,9,.82) 0%,rgba(18,14,9,.25) 45%,rgba(18,14,9,.30) 100%); }
+  .hero-inner{ position:relative; z-index:2; width:100%; color:#fff; padding-bottom:clamp(54px,9vh,104px); padding-top:120px; }
+  .hero .eyebrow{ color:rgba(255,255,255,.75); }
+  .hero .big{ font-family:var(--sans); font-weight:700; letter-spacing:-.03em; font-size:clamp(3.4rem,12vw,8rem); line-height:.95; margin:.18em 0 .1em; }
+  .hero .big .dot{ color:#a9b06a; }
+  .hero .tag{ font-family:var(--mono); font-size:clamp(.85rem,2.5vw,1.05rem); letter-spacing:.2em; text-transform:lowercase; color:rgba(255,255,255,.9); }
+  .hero .lead{ margin:1.5em 0 2em; max-width:46ch; color:rgba(255,255,255,.88); font-size:clamp(1rem,1.7vw,1.16rem); }
+  .hero-cta{ display:flex; gap:1rem; flex-wrap:wrap; }
+
+  .section{ padding:clamp(48px,7vh,84px) 0; }
+  .section-head{ max-width:64ch; margin-bottom:clamp(26px,4vw,44px); }
+  .section-head h2{ font-size:clamp(2.1rem,5vw,3.6rem); margin-top:.45em; }
+  .section-head p{ color:var(--ink-2); font-size:1.07rem; margin-top:1.1em; max-width:56ch; }
+
+  #nosotros{ border-top:1px solid var(--line); }
+  .about{ display:grid; grid-template-columns:1.05fr .95fr; gap:clamp(34px,5vw,76px); align-items:center; margin-bottom:clamp(54px,8vw,96px); }
+  #quienes-somos .about, #nosotros .about{ margin-bottom:0; }
+  .about-photo{ position:relative; overflow:hidden; border-radius:var(--r); aspect-ratio:4/4.4; }
+  .about-photo img{ width:100%; height:100%; object-fit:cover; }
+  .about-text h2{ font-size:clamp(1.9rem,4.2vw,3rem); margin:.4em 0 .65em; }
+  .about-text p{ color:var(--ink-2); font-size:1.06rem; }
+  .about-text p + p{ margin-top:1em; }
+  .pillars{ display:grid; grid-template-columns:repeat(3,1fr); gap:clamp(26px,4vw,54px); border-top:1px solid var(--line); padding-top:clamp(34px,5vw,52px); }
+  .pillar .k{ font-family:var(--mono); font-size:.7rem; letter-spacing:.2em; text-transform:uppercase; color:var(--corten); }
+  .pillar h3{ font-size:1.25rem; margin:.7em 0 .5em; }
+  .pillar p{ color:var(--ink-2); font-size:.97rem; }
+
+  #catalogo{ background:var(--bg-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .model{ display:grid; grid-template-columns:1fr 1fr; gap:clamp(32px,5vw,84px); align-items:center; }
+  .model + .model{ margin-top:clamp(44px,6vw,72px); }
+  .model-gallery{ display:grid; grid-template-columns:1fr 1fr; gap:12px; }
+  .model-gallery figure{ position:relative; overflow:hidden; border-radius:var(--r); aspect-ratio:1/1; box-shadow:0 30px 50px -40px rgba(23,17,10,.5); }
+  .model-gallery figure.g-main{ grid-column:1/-1; aspect-ratio:4/3.4; }
+  .model-gallery img, .model-gallery video{ width:100%; height:100%; object-fit:cover; transition:transform .8s cubic-bezier(.2,.7,.2,1); }
+  .model-gallery figure:hover img{ transform:scale(1.04); }
+  .model.reverse .model-gallery{ order:2; }
+  .elemental-main img{ object-position:50% 85%; }
+  .brasa-main img, .brasa-main video{ object-position:50% 82%; }
+
+  .others{ margin-top:clamp(44px,6vw,72px); border-top:1px solid var(--line); padding-top:clamp(30px,4vw,48px); }
+  .others h3{ font-size:clamp(1.8rem,4vw,2.6rem); margin:.35em 0 .45em; }
+  .others > p{ color:var(--ink-2); font-size:1.05rem; max-width:56ch; margin-bottom:clamp(26px,4vw,42px); }
+  .others-grid{ display:grid; grid-template-columns:repeat(3,1fr); gap:12px; }
+  .others-grid figure{ position:relative; overflow:hidden; border-radius:var(--r); aspect-ratio:4/5; }
+  .others-grid img{ width:100%; height:100%; object-fit:cover; transition:transform .8s cubic-bezier(.2,.7,.2,1); }
+  .others-grid figure:hover img{ transform:scale(1.05); }
+  .others-grid figcaption{ position:absolute; inset:auto 0 0 0; padding:26px 12px 10px; font-family:var(--mono); font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:#fff; background:linear-gradient(to top,rgba(18,14,9,.72),transparent); }
+  .model-ix{ font-family:var(--mono); font-size:.72rem; letter-spacing:.24em; text-transform:uppercase; color:var(--ink-3); }
+  .model-name{ font-size:clamp(2.2rem,5vw,3.4rem); margin:.18em 0 .5em; font-weight:500; }
+  .model-name .b{ font-weight:700; }
+  .model-name .dot{ color:var(--olive); }
+  .model-desc{ color:var(--ink-2); font-size:1.05rem; max-width:42ch; margin-bottom:1.7em; }
+  .specs{ border-top:1px solid var(--line); margin-bottom:1.9em; }
+  .spec{ display:grid; grid-template-columns:.7fr 1.3fr; gap:18px; padding:13px 0; border-bottom:1px solid var(--line); }
+  .spec .k{ font-family:var(--mono); font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; color:var(--ink-3); padding-top:.15em; }
+  .spec .v{ font-size:.98rem; color:var(--ink); }
+  .model-price{ display:flex; align-items:center; gap:1.1rem; flex-wrap:wrap; }
+  .model-price .note{ font-family:var(--mono); font-size:.7rem; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); }
+
+  #contacto{ position:relative; overflow:hidden; color:#fff; background:#14110c; }
+  .contact-photo{ position:absolute; inset:0; z-index:0; background:#14110c center/cover no-repeat; background-image:url("images/contacto.jpg"); opacity:.28; }
+  #contacto::after{ content:""; position:absolute; inset:0; z-index:1; background:linear-gradient(100deg,rgba(111,74,44,.55),rgba(20,17,12,.85)); }
+  .contact-inner{ position:relative; z-index:2; text-align:center; max-width:58ch; margin:0 auto; padding:clamp(60px,9vh,100px) 0; }
+  .contact-inner .eyebrow{ color:rgba(255,255,255,.65); }
+  .contact-inner h2{ font-size:clamp(2.2rem,5.5vw,4rem); margin-top:.4em; }
+  .contact-inner p{ color:rgba(255,255,255,.85); font-size:1.1rem; margin:1.1em auto 2.1em; max-width:42ch; }
+  .contact-cta{ display:flex; gap:1rem; justify-content:center; flex-wrap:wrap; }
+  .contact-cta .pill:hover{ background:var(--olive-d); }
+  .contact-meta{ margin-top:3.2em; display:flex; gap:2.4rem; justify-content:center; flex-wrap:wrap; font-family:var(--mono); font-size:.76rem; letter-spacing:.08em; color:rgba(255,255,255,.8); }
+  .contact-meta span{ color:#c8b48f; }
+
+  footer{ background:var(--bg); padding:50px 0 40px; }
+  .foot{ display:flex; justify-content:space-between; align-items:flex-end; gap:30px; flex-wrap:wrap; }
+  .foot .wordmark{ font-size:1.6rem; }
+  .foot .tag{ font-family:var(--mono); font-size:.72rem; letter-spacing:.18em; text-transform:uppercase; color:var(--ink-3); margin-top:.55em; }
+  .foot-links{ display:flex; gap:1.5rem; font-family:var(--mono); font-size:.74rem; text-transform:uppercase; letter-spacing:.08em; flex-wrap:wrap; }
+  .foot-links a{ color:var(--ink-2); transition:color .25s; display:inline-flex; align-items:center; gap:.5em; }
+  .foot-links a:hover{ color:var(--corten); }
+  .copy{ margin-top:34px; font-family:var(--mono); font-size:.66rem; letter-spacing:.1em; color:var(--ink-3); }
+
+  .reveal{ opacity:0; transform:translateY(24px); transition:opacity .8s ease,transform .8s ease; }
+  .reveal.in{ opacity:1; transform:none; }
+  .reveal.d1{ transition-delay:.08s } .reveal.d2{ transition-delay:.16s } .reveal.d3{ transition-delay:.24s }
+  @media (prefers-reduced-motion:reduce){ .reveal{ opacity:1; transform:none; } html{ scroll-behavior:auto; } }
+
+  @media (max-width:900px){
+    .nav-links{ position:fixed; inset:72px 0 auto 0; flex-direction:column; gap:0; align-items:stretch; background:rgba(244,242,236,.98); backdrop-filter:blur(14px); padding:8px var(--pad) 28px; transform:translateY(-130%); transition:transform .4s ease; border-bottom:1px solid var(--line); }
+    body.menu-open .nav-links{ transform:none; }
+    .nav-links a:not(.pill){ color:var(--ink-2); padding:17px 0; border-bottom:1px solid var(--line); }
+    .nav-links .pill{ margin-top:16px; justify-content:center; }
+    .burger{ display:flex; }
+    .about{ grid-template-columns:1fr; }
+    .about-photo{ aspect-ratio:16/11; order:-1; }
+    .pillars{ grid-template-columns:1fr; gap:30px; }
+    .model{ display:flex; flex-direction:column; }
+    .model-body{ display:contents; }
+    .model-ix{ order:-3; }
+    .model-name{ order:-2; }
+    .model-gallery{ order:-1; margin:8px 0 26px; }
+    .model-gallery figure.g-main{ aspect-ratio:16/12; }
+    .pocket-main img{ object-position:50% 100%; }
+    .others-grid{ grid-template-columns:repeat(2,1fr); }
+  }
+  @media (max-width:540px){
+    .contact-meta{ flex-direction:column; gap:1rem; }
+    .foot{ flex-direction:column; align-items:flex-start; }
+    .spec{ grid-template-columns:1fr; gap:3px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- Sprite de iconos (definido una sola vez) -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <symbol id="ic-wa" viewBox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51l-.57-.01c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413"/></symbol>
+  <symbol id="ic-ig" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069M12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0m0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324M12 16a4 4 0 110-8 4 4 0 010 8m6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881"/></symbol>
+</svg>
+
+<header id="header">
+  <div class="wrap nav">
+    <a href="#inicio" class="wordmark" aria-label="Sector. Inicio">Sector<span class="dot">.</span></a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#nosotros">Servicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#quienes-somos">Quiénes somos</a>
+      <a href="#contacto">Contacto</a>
+      <a class="pill" href="https://wa.me/5491121543511?text=Hola%20Sector!%20Quer%C3%ADa%20hacer%20una%20consulta%20sobre%20un%20fogonero." target="_blank" rel="noopener"><svg class="ico" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>WhatsApp</a>
+    </nav>
+    <button class="burger" id="burger" aria-label="Menú" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<section class="hero" id="inicio">
+  <div class="hero-photo"></div>
+  <div class="wrap hero-inner">
+    <span class="eyebrow reveal in">Catálogo 2026 · Buenos Aires, Argentina</span>
+    <div class="big reveal in d1">Sector<span class="dot">.</span></div>
+    <div class="tag reveal in d1">tu lugar afuera</div>
+    <p class="lead reveal in d2">Diseñamos y construimos sectores fogoneros a medida para disfrutar el jardín todo el año.</p>
+    <div class="hero-cta reveal in d3">
+      <a class="pill" href="#catalogo">Ver catálogo</a>
+      <a class="ghost on-dark" href="https://wa.me/5491121543511?text=Hola%20Sector!%20Quer%C3%ADa%20cotizar%20un%20sector%20para%20mi%20jard%C3%ADn." target="_blank" rel="noopener"><svg class="ico" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Cotizá tu Sector<span class="dot">.</span></a>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="nosotros">
+  <div class="wrap">
+    <div class="about">
+      <div class="about-text">
+        <span class="eyebrow reveal">Servicio</span>
+        <h2 class="reveal d1">Nuestro servicio.</h2>
+        <p class="reveal d2">Nos encargamos de todo: diseño, provisión de materiales y mano de obra. Sin obras largas ni complicaciones, en un plazo de 1 a 5 días, según el proyecto, tu sector queda instalado y listo para usar.</p>
+      </div>
+      <figure class="about-photo reveal d1"><img src="images/nosotros.jpg" alt="Fogonero de ladrillo con costillar al asador en un jardín" loading="lazy" /></figure>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="catalogo">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="eyebrow reveal">Catálogo 2026</span>
+      <h2 class="reveal d1">Nuestros sectores.</h2>
+    </div>
+
+    <article class="model reveal">
+      <div class="model-gallery">
+        <figure class="g-main"><img src="images/origen-1.jpg" alt="Sector. Origen — fogonero de ladrillo macizo con bancos de quebracho sobre piedra blanca" loading="lazy" /></figure>
+        <figure><img src="images/origen-2.jpg" alt="Sector. Origen — costillar al asador sobre el fogonero de ladrillo" loading="lazy" /></figure>
+        <figure><video src="videos/origen-noche.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Sector. Origen — fuego encendido de noche"></video></figure>
+      </div>
+      <div class="model-body">
+        <div class="model-ix">Sector 01</div>
+        <h3 class="model-name">Sector<span class="dot">.</span> <span class="b">Origen</span></h3>
+        <p class="model-desc">Un sector clásico, construido con materiales nobles y de carácter, como quebracho, ladrillo macizo y hierro. Pensado para quienes valoran la calidez de lo auténtico, disfrutan de los encuentros al aire libre y buscan un espacio atemporal que se integre naturalmente con el jardín.</p>
+        <div class="model-price">
+          <a class="pill" href="https://wa.me/5491121543511?text=Hola%20Sector!%20Me%20gust%C3%B3%20el%20Sector.%20Origen%2C%20quer%C3%ADa%20cotizar%20uno%20para%20mi%20jard%C3%ADn." target="_blank" rel="noopener"><svg class="ico" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Quiero uno así</a>
+          <span class="note">Se cotiza a medida</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="model reveal">
+      <div class="model-gallery">
+        <figure class="g-main elemental-main"><img src="images/elemental-1b.jpg" alt="Sector. Elemental — sector iluminado al atardecer con fogonero sobre círculo de piedra" loading="lazy" /></figure>
+        <figure><img src="images/elemental-2.jpg" alt="Sector. Elemental — parrilla grabada Sector. con carne a las brasas" loading="lazy" /></figure>
+        <figure><img src="images/elemental-3b.jpg" alt="Sector. Elemental — fogonero metálico con bancos de metal plegado sobre arenilla" loading="lazy" /></figure>
+        <figure><video src="videos/elemental-humo.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Sector. Elemental — humo sobre la parrilla del fogonero"></video></figure>
+        <figure><video src="videos/elemental-picada.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Sector. Elemental — picada servida junto al fogonero"></video></figure>
+      </div>
+      <div class="model-body">
+        <div class="model-ix">Sector 02</div>
+        <h3 class="model-name">Sector<span class="dot">.</span> <span class="b">Elemental</span></h3>
+        <p class="model-desc">Un sector de estilo moderno y estética industrial, diseñado con materiales como metal plegado, fogonero metálico y arenilla de travertino. Pensado para quienes buscan un espacio exterior contemporáneo, limpio y funcional, con una identidad simple pero marcada.</p>
+        <div class="model-price">
+          <a class="pill" href="https://wa.me/5491121543511?text=Hola%20Sector!%20Me%20gust%C3%B3%20el%20Sector.%20Elemental%2C%20quer%C3%ADa%20cotizar%20uno%20para%20mi%20jard%C3%ADn." target="_blank" rel="noopener"><svg class="ico" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Quiero uno así</a>
+          <span class="note">Se cotiza a medida</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="model reveal">
+      <div class="model-gallery">
+        <figure class="g-main brasa-main"><img src="images/brasa-1.jpg" alt="Sector. Brasa — fogonero con bancos de madera sobre piedra blanca entre cercos vivos" loading="lazy" /></figure>
+        <figure><video src="videos/elemental-video.mp4" autoplay muted loop playsinline preload="metadata" aria-label="Sector. Brasa — recorrida por el sector"></video></figure>
+        <figure><img src="images/brasa-3.jpg" alt="Sector. Brasa — fogonero con parrilla sobre piedra blanca" loading="lazy" /></figure>
+      </div>
+      <div class="model-body">
+        <div class="model-ix">Sector 03</div>
+        <h3 class="model-name">Sector<span class="dot">.</span> <span class="b">Brasa</span></h3>
+        <p class="model-desc">Un sector cálido y funcional, pensado para quienes buscan transformar el jardín de manera rápida y sin obras prolongadas. Su diseño combina una estética rústica con materiales resistentes y de bajo mantenimiento, manteniendo al fuego como protagonista del espacio.</p>
+        <div class="model-price">
+          <a class="pill" href="https://wa.me/5491121543511?text=Hola%20Sector!%20Me%20gust%C3%B3%20el%20Sector.%20Brasa%2C%20quer%C3%ADa%20cotizar%20uno%20para%20mi%20jard%C3%ADn." target="_blank" rel="noopener"><svg class="ico" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Quiero uno así</a>
+          <span class="note">Se cotiza a medida</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="model reveal">
+      <div class="model-gallery">
+        <figure class="g-main pocket-main"><img src="images/pocket-1.jpg" alt="Sector. Pocket — fogonero compacto con tapa parrilla sobre círculo de piedra blanca" loading="lazy" /></figure>
+        <figure><img src="images/pocket-2.jpg" alt="Sector. Pocket — detalle del fogonero con la parrilla abierta" loading="lazy" /></figure>
+        <figure><img src="images/pocket-3.jpg" alt="Sector. Pocket — el sector completo en el jardín" loading="lazy" /></figure>
+      </div>
+      <div class="model-body">
+        <div class="model-ix">Sector 04</div>
+        <h3 class="model-name">Sector<span class="dot">.</span> <span class="b">Pocket</span></h3>
+        <p class="model-desc">Un sector compacto, pensado para quienes cuentan con poco espacio o prefieren una propuesta más simple. Su diseño enmarca el fogonero y le da presencia dentro del jardín, sin ocupar una superficie importante.</p>
+        <div class="model-price">
+          <a class="pill" href="https://wa.me/5491121543511?text=Hola%20Sector!%20Me%20gust%C3%B3%20el%20Sector.%20Pocket%2C%20quer%C3%ADa%20cotizar%20uno%20para%20mi%20jard%C3%ADn." target="_blank" rel="noopener"><svg class="ico" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Quiero uno así</a>
+          <span class="note">Se cotiza a medida</span>
+        </div>
+      </div>
+    </article>
+
+    <div class="others reveal">
+      <span class="eyebrow">Y más</span>
+      <h3>Otros sectores.</h3>
+      <p>Cada proyecto es distinto. Estos son algunos de los sectores que ya construimos y de los que se vienen.</p>
+      <div class="others-grid">
+        <figure><img src="images/otros-nordelta.jpg" alt="Sector en Nordelta al borde de la laguna al atardecer" loading="lazy" /></figure>
+        <figure><img src="images/otros-cardales2.jpg" alt="Sector con guardaleña y deck junto a la laguna en Cardales" loading="lazy" /></figure>
+        <figure><img src="images/otros-martinez.jpg" alt="Fogonero circular de ladrillo visto con parrilla en Martínez" loading="lazy" /></figure>
+        <figure><img src="images/otros-noche.jpg" alt="Fogonero encendido de noche sobre piedra blanca" loading="lazy" /></figure>
+        <figure><img src="images/otros-render.jpg" alt="Render de proyecto de sector con fogonero de piedra junto a la casa" loading="lazy" /></figure>
+        <figure><img src="images/otros-providencia.jpg" alt="Render del proyecto Providencia con sector hundido" loading="lazy" /></figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section" id="quienes-somos">
+  <div class="wrap">
+    <div class="about">
+      <div class="about-text">
+        <span class="eyebrow reveal">Quiénes somos</span>
+        <h2 class="reveal d1">Nació en nuestro propio jardín.</h2>
+        <p class="reveal d2">Sector nació de una experiencia propia. Queríamos crear un lugar donde disfrutar más el jardín: prender un fuego, cocinar, compartir un asado con amigos y tener un espacio al que siempre den ganas de volver.</p>
+        <p class="reveal d2">Empezamos diseñando y construyendo nuestro propio sector. Nos gustó tanto el resultado y la forma en que transformó el jardín que decidimos llevar esa misma idea a otras casas.</p>
+        <p class="reveal d2">Somos arquitectos y entendemos que un buen diseño no solo tiene que verse bien, también tiene que ser funcional, integrarse con el entorno y durar en el tiempo. Por eso cada proyecto se diseña a medida, buscando que el espacio refleje la forma de vivir de quienes lo van a disfrutar.</p>
+        <p class="reveal d2">Creemos que un jardín cobra otra vida cuando tiene un lugar pensado para reunirse. Y eso es, justamente, lo que hacemos.</p>
+      </div>
+      <figure class="about-photo reveal d1"><img src="images/quienes-somos.jpg" alt="Compartiendo el fuego en un sector construido por Sector." loading="lazy" /></figure>
+    </div>
+  </div>
+</section>
+
+<section id="contacto">
+  <div class="contact-photo"></div>
+  <div class="wrap contact-inner">
+    <span class="eyebrow reveal">Contacto</span>
+    <h2 class="reveal d1">Hagamos tu lugar afuera.</h2>
+    <p class="reveal d2">Contanos sobre tu espacio y te ayudamos a diseñarlo. Te respondemos por WhatsApp e Instagram.</p>
+    <div class="contact-cta reveal d2">
+      <a class="pill" href="https://wa.me/5491121543511?text=Hola%20Sector!%20Quer%C3%ADa%20hacer%20una%20consulta%20sobre%20un%20fogonero." target="_blank" rel="noopener"><svg class="ico" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>Escribinos por WhatsApp</a>
+      <a class="ghost on-dark" href="https://instagram.com/sector.fogonero" target="_blank" rel="noopener"><svg class="ico" fill="currentColor" aria-hidden="true"><use href="#ic-ig"/></svg>@sector.fogonero</a>
+    </div>
+    <div class="contact-meta reveal d2">
+      <div><span>Ubicación</span> &nbsp;Buenos Aires, Argentina</div>
+      <div><span>Instagram</span> &nbsp;@sector.fogonero</div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap foot">
+    <div>
+      <div class="wordmark">Sector<span class="dot">.</span></div>
+      <div class="tag">Tu lugar afuera</div>
+    </div>
+    <nav class="foot-links">
+      <a href="#nosotros">Servicio</a>
+      <a href="#catalogo">Catálogo</a>
+      <a href="#quienes-somos">Quiénes somos</a>
+      <a href="#contacto">Contacto</a>
+      <a href="https://instagram.com/sector.fogonero" target="_blank" rel="noopener"><svg class="ico" fill="currentColor" aria-hidden="true"><use href="#ic-ig"/></svg>Instagram</a>
+      <a href="https://wa.me/5491121543511" target="_blank" rel="noopener"><svg class="ico" fill="currentColor" aria-hidden="true"><use href="#ic-wa"/></svg>WhatsApp</a>
+    </nav>
+  </div>
+  <div class="wrap"><div class="copy">© <span id="year"></span> Sector. — Diseño y construcción de espacios exteriores · Buenos Aires, Argentina.</div></div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const header = document.getElementById('header');
+  const onScroll = () => header.classList.toggle('scrolled', window.scrollY > 30);
+  onScroll(); window.addEventListener('scroll', onScroll, { passive:true });
+  const burger = document.getElementById('burger');
+  burger.addEventListener('click', () => {
+    const open = document.body.classList.toggle('menu-open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('#navLinks a').forEach(a =>
+    a.addEventListener('click', () => { document.body.classList.remove('menu-open'); burger.setAttribute('aria-expanded', false); })
+  );
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold:0.12, rootMargin:'0px 0px -8% 0px' });
+  document.querySelectorAll('.reveal:not(.in)').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
